@@ -130,7 +130,7 @@ class AddForageableFragment : Fragment() {
     }
 
     private fun bindForageable(forageable: Forageable) {
-        binding.apply{
+        binding.apply {
             nameInput.setText(forageable.name, TextView.BufferType.SPANNABLE)
             locationAddressInput.setText(forageable.address, TextView.BufferType.SPANNABLE)
             inSeasonCheckbox.isChecked = forageable.inSeason

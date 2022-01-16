@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2021 The Android Open Source Project.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +22,7 @@
     <fragment
         android:id="@+id/forageableListFragment"
         android:name="com.example.forage.ui.ForageableListFragment"
-        android:label="Forage" >
+        android:label="Forage">
         <action
             android:id="@+id/action_forageableListFragment_to_addForageableFragment"
             app:destination="@id/addForageableFragment" />
@@ -35,20 +34,20 @@
         android:id="@+id/addForageableFragment"
         android:name="com.example.forage.ui.AddForageableFragment"
         android:label="Forage"
-        tools:layout="@layout/fragment_add_forageable" >
+        tools:layout="@layout/fragment_add_forageable">
         <action
             android:id="@+id/action_addForageableFragment_to_forageableListFragment"
             app:destination="@id/forageableListFragment" />
         <argument
             android:name="id"
-            app:argType="long"
-            android:defaultValue="0L" />
+            android:defaultValue="0L"
+            app:argType="long" />
     </fragment>
     <fragment
         android:id="@+id/forageableDetailFragment"
         android:name="com.example.forage.ui.ForageableDetailFragment"
         android:label="Forage"
-        tools:layout="@layout/fragment_forageable_detail" >
+        tools:layout="@layout/fragment_forageable_detail">
         <argument
             android:name="id"
             android:defaultValue="0L"
